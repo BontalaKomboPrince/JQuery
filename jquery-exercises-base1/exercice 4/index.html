@@ -6,7 +6,9 @@
   <script src="jquery-2.2.4.js"></script>
 </head>
 <body>
-  <ul>
+  <button id="Color">Change the color</button>
+
+  <ul class="nav">
     <li>Html</li>
     <li>CSS</li>
     <li>Javascript</li>
@@ -15,6 +17,11 @@
   </ul>
   <script>
     //Ecrire le JQuery ici
+    $(function() {
+      $("#Color").click(function(){//Afficher la div "texte".
+      $("ul.nav li").css({ 'color': 'red', 'font-size': '150%' });
+      })
+    });
   </script>
 </body>
 </html>

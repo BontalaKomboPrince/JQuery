@@ -6,6 +6,7 @@
   <script src="jquery-2.2.4.js"></script>
 </head>
 <body>
+  <button id="cacher"> Click ici et nous partirons</button>
   <ul>
     <li>Html</li>
     <li>CSS</li>
@@ -23,6 +24,11 @@
   </ol>
 <script>
   //Ecrire le JQuery ici
+  $(function(){
+    $("#cacher").click(function(){
+      $("li.a_cacher").hide();
+    })
+  })
 </script>
 </body>
 </html>

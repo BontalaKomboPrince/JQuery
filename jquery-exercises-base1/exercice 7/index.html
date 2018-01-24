@@ -6,6 +6,8 @@
   <script src="jquery-2.2.4.js"></script>
 </head>
 <body>
+  <button id="supp"> Click ici et nous partirons</button>
+
   <ul>
     <li>Html</li>
     <li>CSS</li>
@@ -23,6 +25,11 @@
   </ol>
 <script>
   //Ecrire le JQuery ici
+  $(function(){
+    $("#supp").click(function(){
+      $("li.a_supprimer").remove();
+    })
+  })
 </script>
 </body>
 </html>
